@@ -11,7 +11,6 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.annotation.JsonProperty;;
-
 @Document(collection ="clientcvs")
 public class ClientCV {
 	
@@ -34,6 +33,62 @@ public class ClientCV {
 	
 	private String postalcode;
 	private String city;
+	private List<ContactInformation> contactInformation;
+	private List<Education> education;
+	private List<Position> position;
+	private List<Client> client;
+	
+	
+	public List<ContactInformation> getContactInformation() {
+		return contactInformation;
+	}
+
+
+
+	public void setContactInformation(List<ContactInformation> contactInformation) {
+		this.contactInformation = contactInformation;
+	}
+
+
+
+	public List<Education> getEducation() {
+		return education;
+	}
+
+
+
+	public void setEducation(List<Education> education) {
+		this.education = education;
+	}
+
+
+
+	public List<Position> getPosition() {
+		return position;
+	}
+
+
+
+	public void setPosition(List<Position> position) {
+		this.position = position;
+	}
+
+
+
+	public List<Client> getClient() {
+		return Client;
+	}
+
+
+
+	public void setClient(List<Client> client) {
+		Client = client;
+	}
+
+	private List<Client> Client;
+	
+	
+	
 	
 	public String getCvId() {
 		return cvId;
