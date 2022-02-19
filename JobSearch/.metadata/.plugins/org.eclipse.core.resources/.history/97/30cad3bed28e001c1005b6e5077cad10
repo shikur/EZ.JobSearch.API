@@ -1,9 +1,0 @@
-package com.Ez.JobSearch.JobSearch.Repositories;
-
-import org.springframework.stereotype.Repository;
-import com.Ez.JobSearch.JobSearch.model;
-
-@Repository
-public class ClientRepository extends   MongoRepository<ClientCV, Long>{
-
-}

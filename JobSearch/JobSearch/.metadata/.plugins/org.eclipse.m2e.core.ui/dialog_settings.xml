@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\shiku\source\repos\EZprojects\EZ.JobSearch.API\JobSearch"/>
+			<item value="C:\Users\shiku\source\repos\EZprojects\EZ.JobSearch.API\JobSearch\JobSearch"/>
 			<item value="C:\Users\shiku\source\repos\JobSearch\JobSearch\"/>
 			<item value="C:\Users\shiku\source\repos\JobSearch\JobSearch"/>
 			<item value="C:\Users\shiku\source\repos\JobSearch"/>
@@ -17,6 +19,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\shiku\source\repos\EZprojects\EZ.JobSearch.API\JobSearch"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -28,6 +31,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>

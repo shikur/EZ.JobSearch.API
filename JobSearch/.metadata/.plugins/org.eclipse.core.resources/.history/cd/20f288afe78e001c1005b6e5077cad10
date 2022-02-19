@@ -1,2 +1,0 @@
-spring.data.mongodb.database=clientcvDB
-spring.data.mongodb.port=27017
