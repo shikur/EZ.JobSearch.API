@@ -1,0 +1,12 @@
+package com.Ez.JobSearch.JobSearch.model;
+
+public class ContactInformation {
+	private String id;
+	private String url;
+	private String phone;
+	private String address;
+	private String email;
+	private String birthMMDD;
+	
+
+}

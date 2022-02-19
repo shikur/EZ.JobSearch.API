@@ -1,0 +1,17 @@
+package com.Ez.JobSearch.JobSearch.rest;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class JobsController {
+	
+	//this appliation used to send hellow workd
+	
+	@GetMapping("/joblist")
+	public String getJobsList() {
+		
+		return "this is shikur work";
+	}
+
+}

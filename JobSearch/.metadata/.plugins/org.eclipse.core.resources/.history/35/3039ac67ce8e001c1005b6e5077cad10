@@ -1,0 +1,19 @@
+package com.Ez.JobSearch.JobSearch.model;
+
+public class Position {
+	
+	private String id;
+	private String title;
+	private String EmployeType;
+	private String companyType;
+	private String companylocation ;
+	private String startdateMMYYYY;
+	private String enddateMMYYYY;
+	private String headline;
+	private String industry;
+	private String description;
+	private String media;
+	
+	
+
+}

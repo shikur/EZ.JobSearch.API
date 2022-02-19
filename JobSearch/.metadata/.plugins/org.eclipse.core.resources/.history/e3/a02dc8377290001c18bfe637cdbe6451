@@ -1,0 +1,196 @@
+package com.Ez.JobSearch.JobSearch.Repositories;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
+import org.springframework.stereotype.Component;
+
+import com.Ez.JobSearch.JobSearch.model.ClientCV;
+
+@Component
+public class ClientCVRepositoryImpl implements  ClientCVRepository {
+    
+	private final MongoTemplate mongoTemplate = null;
+	
+//	@Override
+//	public void addClientCV(String cvData) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+
+	@Override
+	public <S extends ClientCV> List<S> saveAll(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ClientCV> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ClientCV> findAll(Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/*
+	 * @Override public <S extends ClientCV> S insert(S entity) { // TODO
+	 * Auto-generated method stub return null; }
+	 */
+
+	@Override
+	public <S extends ClientCV> List<S> insert(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends ClientCV> List<S> findAll(Example<S> example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends ClientCV> List<S> findAll(Example<S> example, Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<ClientCV> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends ClientCV> S save(S entity) {
+		// TODO Auto-generated method stub
+		return mongoTemplate.insert(entity);
+	}
+
+	@Override
+	public Optional<ClientCV> findById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean existsById(String id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Iterable<ClientCV> findAllById(Iterable<String> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void deleteById(String id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(ClientCV entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAllById(Iterable<? extends String> ids) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAll(Iterable<? extends ClientCV> entities) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public <S extends ClientCV> Optional<S> findOne(Example<S> example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends ClientCV> Page<S> findAll(Example<S> example, Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends ClientCV> long count(Example<S> example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public <S extends ClientCV> boolean exists(Example<S> example) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public <S extends ClientCV, R> R findBy(Example<S> example, Function<FetchableFluentQuery<S>, R> queryFunction) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ClientCV insert(ClientCV clientCV) {
+		// TODO Auto-generated method stub
+		return mongoTemplate.insert(clientCV);
+	}
+
+	/*
+	 * @Override public ClientCV insert(ClientCV clientCV) { // TODO Auto-generated
+	 * method stub return null; }
+	 * 
+	 * @Override public ClientCV insert(ClientCV clientCV) { // TODO Auto-generated
+	 * method stub return null; }
+	 */
+
+//	@Override
+//	public List<ClientCV> findByTitleContaining(String title) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+//
+//	
+//
+//	@Override
+//	public List<ClientCV> findByEmail(boolean applied) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+	
+	
+
+}

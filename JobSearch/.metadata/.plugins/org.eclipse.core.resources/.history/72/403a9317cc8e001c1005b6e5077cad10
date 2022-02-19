@@ -1,0 +1,5 @@
+package com.Ez.JobSearch.JobSearch.model;
+
+public class Position {
+
+}

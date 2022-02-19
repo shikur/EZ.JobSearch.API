@@ -1,0 +1,56 @@
+package com.Ez.JobSearch.JobSearch.rest;
+
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.rest.webmvc.ResourceNotFoundException;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Ez.JobSearch.JobSearch.Repositories.ClientCVRepository;
+import com.Ez.JobSearch.JobSearch.Services.ClientServices;
+import com.Ez.JobSearch.JobSearch.model.ClientCV;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+
+@RestController
+@RequestMapping("/api/v1")
+public class ClientCVController {
+	
+	
+    @Autowired
+    private ClientServices _clientServices;
+	 
+    
+    @PostMapping("/clientcv")
+    public ClientCV create(@RequestBody ClientCV clientcv) {
+    	
+        return this._clientServices.insertClientCVData(clientcv);
+       }
+    
+    @GetMapping("/clientcvdo")
+    public List<ClientCV> getallListOfCvs() {
+    	   	
+        return this._clientServices.GetBClientCVData();
+        }
+	
+}

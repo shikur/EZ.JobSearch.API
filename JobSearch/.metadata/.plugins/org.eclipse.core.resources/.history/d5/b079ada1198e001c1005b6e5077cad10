@@ -1,0 +1,7 @@
+package com.Ez.JobSearch.JobSearch.Repositories;
+
+public interface ClientCVRepository {
+	
+	void addClientCV(String cvData);
+
+}
